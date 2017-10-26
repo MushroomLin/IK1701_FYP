@@ -38,3 +38,8 @@ def clean_str(string, rm_stopwords = False):
         return string.strip()
     else:
         return string.strip()
+
+def data_transformer(data,mode):
+    # Process data label
+    Y=data['Label']
+    # Process data

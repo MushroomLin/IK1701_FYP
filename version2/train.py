@@ -5,10 +5,10 @@ import data_handler as dh
 from sklearn.svm import SVC
 from sklearn.metrics import (brier_score_loss, precision_score, recall_score,
                              f1_score,accuracy_score,confusion_matrix,classification_report)
-# from sklearn import datasets, neighbors, linear_model
-# from sklearn.linear_model import LogisticRegression
-# from sklearn.naive_bayes import GaussianNB
-# from sklearn.ensemble import RandomForestClassifier, VotingClassifier
+from sklearn import datasets, neighbors, linear_model
+from sklearn.linear_model import LogisticRegression
+from sklearn.naive_bayes import GaussianNB
+from sklearn.ensemble import RandomForestClassifier, VotingClassifier
 import csv
 
 topn_headlines = 20 # Select top 1 to topn_headlines as samples
@@ -77,15 +77,14 @@ print(classification_report(Y_predict,Y_test))
 print('Accuracy: ' + str(clf.score(X_test, Y_test)))
 
 # Build voting classifier for testing
-# logistic = LogisticRegression(random_state=1)
-# rf = RandomForestClassifier(random_state=1)
-# gnb = GaussianNB()
-# svm = SVC(random_state=1,probability=True)
+logistic = LogisticRegression(random_state=1)
+rf = RandomForestClassifier(random_state=1)
+gnb = GaussianNB()
+svm = SVC(random_state=1,probability=True)
 
-# eclf1 = VotingClassifier(estimators=[
-#       ('lr', logistic),('gnb',gnb),('svm',svm)], voting='soft', weights=[1,1,1],
-#        flatten_transform=True)
-# eclf1 = eclf1.fit(X_train, Y_train)
-# Y_predict_vote = eclf1.predict(X_test)
-# print (classification_report(Y_predict_vote,Y_test))
-# print ("Accuracy: " + str(accuracy_score(Y_predict_vote, Y_test)))
+eclf1 = VotingClassifier(estimators=[('lr', logistic),('gnb',gnb),('svm',svm)],
+						 voting='soft', weights=[1,1,1])
+eclf1 = eclf1.fit(X_train, Y_train)
+Y_predict_vote = eclf1.predict(X_test)
+print (classification_report(Y_predict_vote,Y_test))
+print ("Accuracy: " + str(accuracy_score(Y_predict_vote, Y_test)))

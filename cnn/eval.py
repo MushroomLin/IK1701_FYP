@@ -1,35 +1,23 @@
-#! /usr/bin/env python
-# Modified from https://github.com/dennybritz/cnn-text-classification-tf/blob/master/eval.py
-
 import tensorflow as tf
 import numpy as np
 import os
+import pandas as pd
+import time
+import datetime
 import data_function as df
+from cnn import TextCNN
 from tensorflow.contrib import learn
-from sklearn.feature_extraction.text import CountVectorizer
-import nltk
 import csv
-from data_function import tfidf_score
-
-def test_file_loader(file_path):
-    with open(file_path,'r') as f:
-        sentences=[]
-        num=0
-        for line in f:
-            sentences.append(line)
-            num+=1
-        f.close()
-    return num, sentences
-
 
 # Parameters
 # ==================================================
 
-
+# Data Parameters
+tf.flags.DEFINE_string("data_file", "./data/apple.csv", "Data source for the negative data.")
 # Eval Parameters
 tf.flags.DEFINE_integer("batch_size", 64, "Batch Size (default: 64)")
-tf.flags.DEFINE_string("checkpoint_dir", "./runs/1500736434/checkpoints", "Checkpoint directory from training run")
-tf.flags.DEFINE_boolean("eval_train", False, "Evaluate on all training data")
+tf.flags.DEFINE_string("checkpoint_dir", "./runs/1511450473/checkpoints/", "Checkpoint directory from training run")
+tf.flags.DEFINE_boolean("eval_train", True, "Evaluate on all training data")
 
 # Misc Parameters
 tf.flags.DEFINE_boolean("allow_soft_placement", True, "Allow device soft device placement")
@@ -43,12 +31,20 @@ for attr, value in sorted(FLAGS.__flags.items()):
     print("{}={}".format(attr.upper(), value))
 print("")
 
-test_file='./test/doc/1'
-dir_path='./test/doc'
-file_num=1
-total_num, x_raw = test_file_loader(test_file)
-print(total_num)
-y_test = np.zeros(total_num)
+# CHANGE THIS: Load data. Load your own data here
+if FLAGS.eval_train:
+    x_raw, y_test = df.load_data_and_labels(FLAGS.data_file)
+    y_test = np.argmax(y_test, axis=1)
+else:
+    data=pd.read_csv('./data/apple.csv')
+    print(np.array(data['Title']))
+    x_raw=np.array(data['Title'])
+    y_test=np.zeros(len(data['Title']))
+    # x_raw = ["I like apple", "I hate doing homework", "apple is stupid", "facebook is perfect",
+    #          "amazon will bust soon", "facebook stock price will increase", "our life is easy",
+    #          "our life is not easy", "our life is not hard", "our life is hard", "facebook stock price will decrease",
+    #          "amazon is bull shit"]
+    # y_test = [1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0]
 
 # Map data into vocabulary
 vocab_path = os.path.join(FLAGS.checkpoint_dir, "..", "vocab")
@@ -89,25 +85,15 @@ with graph.as_default():
             batch_predictions = sess.run(predictions, {input_x: x_test_batch, dropout_keep_prob: 1.0})
             all_predictions = np.concatenate([all_predictions, batch_predictions])
 
-tfidf_df, max_score = tfidf_score(file_num=file_num,dir_path=dir_path,file_path=test_file)
-print("max score",max_score)
-tfidf_df.sort_values(by='score',ascending=False).to_csv('./tfidf_score.csv')
-
-count=0
+# Print accuracy if y_test is defined
 if y_test is not None:
-    predictions_human_readable = np.column_stack((np.array(x_raw), all_predictions))
-    print(predictions_human_readable.shape)
-    for i in predictions_human_readable:
-        if float(i[1])==1:
-            tfidf_df.loc[count,'score']=tfidf_df.loc[count,'score']/max_score+1
-        else:
-            tfidf_df.loc[count, 'score'] = tfidf_df.loc[count, 'score'] / max_score
-        count+=1
+    correct_predictions = float(sum(all_predictions == y_test))
+    print("Total number of test examples: {}".format(len(y_test)))
+    print("Accuracy: {:g}".format(correct_predictions/float(len(y_test))))
 
-tfidf_df=tfidf_df.sort_values(by='score',ascending=False)
-tfidf_df.to_csv('./adjusted_score.csv')
 # Save the evaluation to a csv
-# out_path = os.path.join(FLAGS.checkpoint_dir, "..", "prediction.csv")
-# print("Saving evaluation to {0}".format(out_path))
-# with open(out_path, 'w') as f:
-#     csv.writer(f).writerows(predictions_human_readable)
+predictions_human_readable = np.column_stack((np.array(x_raw), all_predictions))
+out_path = os.path.join(FLAGS.checkpoint_dir, "..", "prediction.csv")
+print("Saving evaluation to {0}".format(out_path))
+with open(out_path, 'w') as f:
+    csv.writer(f).writerows(predictions_human_readable)

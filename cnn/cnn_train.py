@@ -19,14 +19,14 @@ os.environ['TF_CPP_MIN_LOG_LEVEL']='2'
 # ==================================================
 
 # Data loading params
-tf.flags.DEFINE_float("dev_sample_percentage", .2, "Percentage of the training data to use for validation")
-tf.flags.DEFINE_string("positive_data_file", "./labeled/wiki_positive", "Data source for the positive data.")
-tf.flags.DEFINE_string("negative_data_file", "./labeled/wiki_negative", "Data source for the negative data.")
+tf.flags.DEFINE_float("dev_sample_percentage", .005, "Percentage of the training data to use for validation")
+tf.flags.DEFINE_string("positive_data_file", "./data/positive", "Data source for the positive data.")
+tf.flags.DEFINE_string("negative_data_file", "./data/negative", "Data source for the negative data.")
 
 # Model Hyperparameters
 tf.flags.DEFINE_integer("embedding_dim", 100, "Dimensionality of character embedding (default: 128)")
 tf.flags.DEFINE_string("filter_sizes", "3,4,5", "Comma-separated filter sizes (default: '3,4,5')")
-#tf.flags.DEFINE_string("word2vec","word2vec_model","word2vec embedding file")
+tf.flags.DEFINE_string("word2vec","word2vec_model","word2vec embedding file")
 tf.flags.DEFINE_integer("num_filters", 128, "Number of filters per filter size (default: 128)")
 tf.flags.DEFINE_float("dropout_keep_prob", 0.5, "Dropout keep probability (default: 0.5)")
 tf.flags.DEFINE_float("l2_reg_lambda", 0.005, "L2 regularization lambda (default: 0.005)")
@@ -55,18 +55,18 @@ print("")
 # Load data
 print("Loading data...")
 
-data=pd.read_csv('../stocknews/Combined_News_DJIA.csv')
-x_text=[]
-for row in range(0,len(data.index)):
-    new_str=' '.join(str(x) for x in data.iloc[row,2:27])
-    x_text.append(new_str)
-y_=data['Label']
-y=[]
-for i in y_:
-    if i==0: y.append([0,1])
-    else: y.append([1,0])
-y=np.concatenate([y], 0)
-# x_text, y = data_function.load_data_and_labels(FLAGS.positive_data_file, FLAGS.negative_data_file)
+# data=pd.read_csv('../stocknews/Combined_News_DJIA.csv')
+# x_text=[]
+# for row in range(0,len(data.index)):
+#     new_str=' '.join(str(x) for x in data.iloc[row,2:27])
+#     x_text.append(new_str)
+# y_=data['Label']
+# y=[]
+# for i in y_:
+#     if i==0: y.append([0,1])
+#     else: y.append([1,0])
+# y=np.concatenate([y], 0)
+x_text, y = data_function.load_data_and_labels(FLAGS.positive_data_file, FLAGS.negative_data_file)
 # Build vocabulary
 max_document_length = max([len(x.split(" ")) for x in x_text])
 vocab_processor = learn.preprocessing.VocabularyProcessor(max_document_length)
@@ -79,7 +79,6 @@ shuffle_indices = np.random.permutation(np.arange(len(y)))
 x_shuffled = x[shuffle_indices]
 y_shuffled = y[shuffle_indices]
 # Split train/test set
-# TODO: This is very crude, should use cross-validation
 dev_sample_index = -1 * int(FLAGS.dev_sample_percentage * float(len(y)))
 x_train, x_dev = x_shuffled[:dev_sample_index], x_shuffled[dev_sample_index:]
 y_train, y_dev = y_shuffled[:dev_sample_index], y_shuffled[dev_sample_index:]

@@ -22,4 +22,4 @@ def show(query, username, date, maxTweets):
     for tweet in tweets:
         printTweet("Twitter:", tweet)
 # Get tweets by query search
-show('#google',None,['2016-01-01','2016-04-02'],10)
+show('$amzn',None,['2017-10-01','2017-10-02'],1000)

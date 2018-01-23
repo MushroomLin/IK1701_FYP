@@ -5,15 +5,17 @@ import matplotlib.dates as dates
 import matplotlib.pyplot as plt
 from datetime import timedelta, date, datetime
 
+
 def daterange(start_date, end_date):
     for n in range(int ((end_date - start_date).days)):
         yield start_date + timedelta(n)
 
 
-data=pd.read_csv('./apple_date.csv')
-label=pd.read_csv('./prediction.csv')
+data=pd.read_csv('./facebook_data.csv')
+data=data.sort_values(by='Date')
+label=pd.read_csv('../runs/1511450473/prediction.csv',names=['Title','Label'])
 label=label['Label']
-t_data=pd.concat([data,label[:105408]],axis=1)
+t_data=pd.concat([data,label[:len(data)]],axis=1)
 start_date = date(2017, 3, 1)
 end_date = date(2017, 4, 1)
 list_sentiment=np.zeros(31)
@@ -35,15 +37,15 @@ list_average=list_sentiment/list_count
 
 quandl.ApiConfig.api_key = 'GZzqbzHAarxcAqdTwfZ7'
 data = quandl.get_table('WIKI/PRICES',
-                        ticker = ['AAPL'], date = { 'gte': '2017-03-01', 'lte': '2017-03-31' })
+                        ticker = ['FB'], date = { 'gte': '2017-03-01', 'lte': '2017-03-31' })
 data.from_records(data)
-date=np.array(data.loc[data['ticker'] == 'AAPL']['date'])
-apple=np.array(data.loc[data['ticker'] == 'AAPL']['close'])22
+date=np.array(data.loc[data['ticker'] == 'FB']['date'])
+apple=np.array(data.loc[data['ticker'] == 'FB']['close'])
 
 #
-# plt.plot(date,apple,'r--')
-# plt.title('APPL Stock Price')
-# plt.show()
+plt.plot(date,apple,'r--')
+plt.title('FB Stock Price')
+plt.show()
 plt.plot(list_date,list_sentiment,'b--')
 plt.plot(list_date,list_count,'g--')
 plt.title('Daily positive news (blue) and Daily total news (green)')

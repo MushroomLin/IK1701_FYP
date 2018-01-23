@@ -13,7 +13,7 @@ import csv
 # ==================================================
 
 # Data Parameters
-tf.flags.DEFINE_string("data_file", "./data/apple.csv", "Data source for the negative data.")
+tf.flags.DEFINE_string("data_file", "./data/facebook.csv", "Data source for the negative data.")
 # Eval Parameters
 tf.flags.DEFINE_integer("batch_size", 64, "Batch Size (default: 64)")
 tf.flags.DEFINE_string("checkpoint_dir", "./runs/1511450473/checkpoints/", "Checkpoint directory from training run")
@@ -36,7 +36,7 @@ if FLAGS.eval_train:
     x_raw, y_test = df.load_data_and_labels(FLAGS.data_file)
     y_test = np.argmax(y_test, axis=1)
 else:
-    data=pd.read_csv('./data/apple.csv')
+    data=pd.read_csv('./data/facebook.csv')
     print(np.array(data['Title']))
     x_raw=np.array(data['Title'])
     y_test=np.zeros(len(data['Title']))

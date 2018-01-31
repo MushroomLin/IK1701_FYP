@@ -35,7 +35,7 @@ print(list_sentiment)
 print(list_count)
 list_average=list_sentiment/list_count
 
-quandl.ApiConfig.api_key = 'GZzqbzHAarxcAqdTwfZ7'
+quandl.ApiConfig.api_key = 'AH_8yF2qo1ShWwMn_uBr'
 data = quandl.get_table('WIKI/PRICES',
                         ticker = ['FB'], date = { 'gte': '2017-03-01', 'lte': '2017-03-31' })
 data.from_records(data)

@@ -1,7 +1,6 @@
 import pandas as pd
 import quandl
 import numpy as np
-import matplotlib.dates as dates
 import matplotlib.pyplot as plt
 from datetime import timedelta, date, datetime
 
@@ -37,16 +36,51 @@ for single_date in daterange(start_date, end_date):
 list_average=list_sentiment/list_count
 print(list_sentiment,list_count)
 
+# Got 3 days average sentiment
+index=0
+average_three_days=[]
+for i in list_average:
+    if index==0 or index==1:
+        average_three_days.append(i)
+    else:
+        average_three_days.append(np.mean([list_average[index-1],list_average[index-2],list_average[index]]))
+    index+=1
+average_three_days=np.array(average_three_days)
+
 stock='AAPL'
 quandl.ApiConfig.api_key = 'AH_8yF2qo1ShWwMn_uBr'
-print(stock,start,end)
+
 stock_data = quandl.get_table('WIKI/PRICES',
                         ticker = [stock], date = { 'gte': start, 'lte': end })
-print(stock_data)
+
 stock_data.from_records(stock_data)
 trade_date=np.array(stock_data.loc[stock_data['ticker'] == stock]['date'])
 apple=np.array(stock_data.loc[stock_data['ticker'] == stock]['close'])
 
+# Got derivative
+stock_dev=np.gradient(apple)
+senti_dev=np.gradient(average_three_days)
+
+# Got absolute (-1/1)
+abs_stock_dev=[]
+abs_senti_dev=[]
+
+for i in stock_dev:
+    if i > 0:
+        abs_stock_dev.append(1)
+    else: abs_stock_dev.append(-1)
+
+for i in senti_dev:
+    if i > 0:
+        abs_senti_dev.append(1)
+    else: abs_senti_dev.append(-1)
+
+abs_senti_dev=np.array(abs_senti_dev)
+abs_stock_dev=np.array(abs_stock_dev)
+
+diff=np.abs(abs_stock_dev-abs_senti_dev)
+accuracy=np.mean(diff)/2/len(diff)
+print("Predict accuracy",accuracy)
 #
 # plt.plot(trade_date,apple,'r-')
 # plt.title('AAPL Stock Price')
@@ -59,16 +93,48 @@ apple=np.array(stock_data.loc[stock_data['ticker'] == stock]['close'])
 # plt.title('Daily average sentiment')
 # plt.show()
 
+# /////////////////////////////////////////////////
+# fig, ax1 = plt.subplots()
+# ax1.plot(trade_date, apple, 'b-')
+# ax1.set_xlabel('AAPL Stock Price and Sentiment')
+# # Make the y-axis label, ticks and tick labels match the line color.
+# ax1.set_ylabel('Price', color='b')
+# ax1.tick_params('y', colors='b')
+#
+# ax2 = ax1.twinx()
+# ax2.plot(list_date, average_three_days, 'r-')
+# ax2.set_ylabel('3 Days Average Sentiment', color='r')
+# ax2.tick_params('y', colors='r')
+#
+# fig.tight_layout()
+# plt.show()
+
+# /////////////////////////////////////////////////
+# fig, ax1 = plt.subplots()
+# ax1.plot(trade_date, stock_dev, 'b-')
+# ax1.set_xlabel('AAPL Stock Price Derivative and Sentiment Derivative')
+# # Make the y-axis label, ticks and tick labels match the line color.
+# ax1.set_ylabel('Price Derivative', color='b')
+# ax1.tick_params('y', colors='b')
+#
+# ax2 = ax1.twinx()
+# ax2.plot(list_date, senti_dev, 'r-')
+# ax2.set_ylabel('3 Days Average Sentiment Derivative', color='r')
+# ax2.tick_params('y', colors='r')
+#
+# fig.tight_layout()
+# plt.show()
+
 fig, ax1 = plt.subplots()
-ax1.plot(trade_date, apple, 'b-')
-ax1.set_xlabel('AAPL Stock Price')
+ax1.scatter(trade_date, stock_dev, c='b',s=1)
+ax1.set_xlabel('AAPL Stock Price Derivative and Sentiment Derivative')
 # Make the y-axis label, ticks and tick labels match the line color.
-ax1.set_ylabel('Price', color='b')
+ax1.set_ylabel('Price Derivative', color='b')
 ax1.tick_params('y', colors='b')
 
 ax2 = ax1.twinx()
-ax2.plot(list_date, list_average, 'r-')
-ax2.set_ylabel('Sentiment', color='r')
+ax2.scatter(list_date, senti_dev, c='r',s=1)
+ax2.set_ylabel('3 Days Average Sentiment Derivative', color='r')
 ax2.tick_params('y', colors='r')
 
 fig.tight_layout()

@@ -17,6 +17,7 @@ start_date = date(2015, 1, 1)
 start= start_date.strftime("%Y-%m-%d")
 end_date = date(2016, 12, 31)
 end= end_date.strftime("%Y-%m-%d")
+
 total_day = (end_date-start_date).days
 print("Total",total_day,"days.")
 
@@ -74,13 +75,16 @@ for i in trade_date:
 price_list=[]
 change_list=[]
 volume_list=[]
+
+
+pre_price=110.38
 for single_date in daterange(start_date, end_date):
     date=single_date.strftime('%Y-%m-%d')
-
     if date in trade_day:
         price=float(stock_data.loc[stock_data['date'] == date]['close'])
-        change=float(stock_data.loc[stock_data['date'] == date]['close']-stock_data.loc[stock_data['date'] == date]['open'])
+        change=float(stock_data.loc[stock_data['date'] == date]['close']-pre_price)
         volume=float(stock_data.loc[stock_data['date'] == date]['volume'])
+        pre_price=float(stock_data.loc[stock_data['date'] == date]['close'])
     else:
         price='NaN'
         change='NaN'

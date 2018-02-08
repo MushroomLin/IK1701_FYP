@@ -67,23 +67,32 @@ stock_data.from_records(stock_data)
 trade_date=np.array(stock_data.loc[stock_data['ticker'] == stock]['date'])
 apple=np.array(stock_data.loc[stock_data['ticker'] == stock]['close'])
 
-print(trade_date)
 trade_day=[]
 for i in trade_date:
     trade_day.append(str(i)[:10])
 
 price_list=[]
+change_list=[]
+volume_list=[]
 for single_date in daterange(start_date, end_date):
     date=single_date.strftime('%Y-%m-%d')
 
     if date in trade_day:
-        print(date)
         price=float(stock_data.loc[stock_data['date'] == date]['close'])
-    else: price='NaN'
+        change=float(stock_data.loc[stock_data['date'] == date]['close']-stock_data.loc[stock_data['date'] == date]['open'])
+        volume=float(stock_data.loc[stock_data['date'] == date]['volume'])
+    else:
+        price='NaN'
+        change='NaN'
+        volume='NaN'
     price_list.append(price)
+    change_list.append(change)
+    volume_list.append(volume)
 
 data_frame['Price']=price_list
+data_frame['Change']=change_list
+data_frame['Volume']=volume_list
 df = pd.DataFrame(data=data_frame)
-df = df[['Date','Total','Positive','Average','Price']]
+df = df[['Date','Total','Positive','Average','Volume','Price','Change']]
 print(df)
 df.to_csv('./sentiment.csv',index=False)

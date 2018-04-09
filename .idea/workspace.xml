@@ -2,73 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3787ed88-de14-4917-b3fd-945fd65d1a34" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cnn/cnn.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cnn/cnn_train.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cnn/data/draw_graph.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cnn/data/process_data.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cnn/data/remove_date.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cnn/data_function.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cnn/eval.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cnn/factiva_data/Apple_News_Data.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cnn/factiva_data/eval_data.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cnn/factiva_data/explore_data.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cnn/factiva_data/extreme_days.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cnn/factiva_data/graph.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cnn/factiva_data/prediction.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cnn/factiva_data/sentiment.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cnn/news_data/data_extract.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cnn/news_data/price_data.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/graph/figure_1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lstm/create_data.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lstm/data/apple.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lstm/graph.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lstm/lstm.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lstm/lstm_model" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lstm/lstm_model2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sentiwordnet/sentiwordnet.tsv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/stocknews/test.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/stocknews/train.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_crawler/Exporter.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_crawler/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_crawler/Main.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_crawler/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_crawler/exporter_help_text.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_crawler/got/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_crawler/got/manager/TweetCriteria.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_crawler/got/manager/TweetManager.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_crawler/got/manager/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_crawler/got/models/Tweet.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_crawler/got/models/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_crawler/got3/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_crawler/got3/manager/TweetCriteria.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_crawler/got3/manager/TweetManager.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_crawler/got3/manager/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_crawler/got3/manager/__init__.py.bak" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_crawler/got3/models/Tweet.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_crawler/got3/models/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_crawler/requirements.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_crawler/twitter_crawler.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/version1/README.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/version1/data_helper.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/version1/sentiwordnet.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/version1/train.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/version2/data_handler.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/version2/train.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/yhscraper/scrapy.cfg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/yhscraper/yahoo" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/yhscraper/yhscraper/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/yhscraper/yhscraper/dataset/Amazon_news_title.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/yhscraper/yhscraper/dataset/Apple_news_title.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/yhscraper/yhscraper/dataset/IBM_news_title.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/yhscraper/yhscraper/dataset/MS_news_title.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/yhscraper/yhscraper/items.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/yhscraper/yhscraper/middlewares.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/yhscraper/yhscraper/pipelines.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/yhscraper/yhscraper/settings.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/yhscraper/yhscraper/spiders/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/yhscraper/yhscraper/spiders/yhspider.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/yhscraper/yhspider-googlefinance.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/yhscraper/yhspider-yahoo.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
@@ -90,8 +23,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="2805">
-                <caret line="187" column="23" lean-forward="false" selection-start-line="187" selection-start-column="23" selection-end-line="187" selection-end-column="23" />
+              <first_editor relative-caret-position="2265">
+                <caret line="189" column="26" lean-forward="true" selection-start-line="189" selection-start-column="26" selection-end-line="189" selection-end-column="26" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -838,7 +771,7 @@
         <state relative-caret-position="165">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="20" selection-end-column="89" />
           <folding>
-            <element signature="e#0#23#0" expanded="true" />
+            <element signature="e#0#23#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -877,7 +810,7 @@
         <state relative-caret-position="630">
           <caret line="50" column="19" lean-forward="false" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="19" />
           <folding>
-            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#0#19#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -895,7 +828,7 @@
         <state relative-caret-position="255">
           <caret line="17" column="38" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="38" />
           <folding>
-            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#0#19#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -931,8 +864,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="2805">
-            <caret line="187" column="23" lean-forward="false" selection-start-line="187" selection-start-column="23" selection-end-line="187" selection-end-column="23" />
+          <first_editor relative-caret-position="2265">
+            <caret line="189" column="26" lean-forward="true" selection-start-line="189" selection-start-column="26" selection-end-line="189" selection-end-column="26" />
             <folding />
           </first_editor>
           <second_editor />

@@ -149,8 +149,6 @@ You can download by yourself
     --log_device_placement: Log placement of ops on devices
 ## Phase V: Further data collection and development of sentiment CNN
 ### File description
-Since the Factiva have anti-crawl, it is a stupid way to implement the crawller
-You may need to change code
 * auto_script.py: Example script for download rtf data
 * rft_txt_converter.py: Example script for change rtf data to txt file
 * txt_csv_converter.py: Script for change txt file into csv file
@@ -166,8 +164,8 @@ You may need to change code
     "Average": proportion of positive news  
     "Change": changing rate of close price  
 ### Usage
-    Since the Factiva have anti-crawl, it is a stupid way to implement the crawler
-    You may need to change the code to run.
+    # Since the Factiva have anti-crawl, it is a stupid way to implement the crawler
+    # You may need to change the code to run.
     python auto_script.py
     python rtf_txt_converter.py
     python txt_csv_converter.py

@@ -29,8 +29,6 @@
     │   │   ├── sentiwordnet.py
     │   │   └── train.py
     │   └── version2
-    │       ├── __pycache__
-    │       │   └── data_handler.cpython-36.pyc
     │       ├── data_handler.py
     │       └── train.py
 #### Version 1:

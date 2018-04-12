@@ -2,6 +2,111 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3787ed88-de14-4917-b3fd-945fd65d1a34" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseIII_Data_Collection/price_data.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseIII_Data_Collection/twitter_crawler/Exporter.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseIII_Data_Collection/twitter_crawler/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseIII_Data_Collection/twitter_crawler/Main.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseIII_Data_Collection/twitter_crawler/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseIII_Data_Collection/twitter_crawler/exporter_help_text.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseIII_Data_Collection/twitter_crawler/got/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseIII_Data_Collection/twitter_crawler/got/manager/TweetCriteria.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseIII_Data_Collection/twitter_crawler/got/manager/TweetManager.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseIII_Data_Collection/twitter_crawler/got/manager/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseIII_Data_Collection/twitter_crawler/got/models/Tweet.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseIII_Data_Collection/twitter_crawler/got/models/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseIII_Data_Collection/twitter_crawler/got3/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseIII_Data_Collection/twitter_crawler/got3/manager/TweetCriteria.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseIII_Data_Collection/twitter_crawler/got3/manager/TweetManager.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseIII_Data_Collection/twitter_crawler/got3/manager/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseIII_Data_Collection/twitter_crawler/got3/manager/__init__.py.bak" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseIII_Data_Collection/twitter_crawler/got3/models/Tweet.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseIII_Data_Collection/twitter_crawler/got3/models/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseIII_Data_Collection/twitter_crawler/requirements.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseIII_Data_Collection/twitter_crawler/twitter_crawler.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseIII_Data_Collection/yhscraper_google/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseIII_Data_Collection/yhscraper_google/scrapy.cfg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseIII_Data_Collection/yhscraper_google/yahoo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseIII_Data_Collection/yhscraper_google/yhscraper/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseIII_Data_Collection/yhscraper_google/yhscraper/dataset/Amazon_news_title.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseIII_Data_Collection/yhscraper_google/yhscraper/dataset/Apple_news_title.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseIII_Data_Collection/yhscraper_google/yhscraper/dataset/IBM_news_title.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseIII_Data_Collection/yhscraper_google/yhscraper/dataset/MS_news_title.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseIII_Data_Collection/yhscraper_google/yhscraper/items.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseIII_Data_Collection/yhscraper_google/yhscraper/middlewares.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseIII_Data_Collection/yhscraper_google/yhscraper/pipelines.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseIII_Data_Collection/yhscraper_google/yhscraper/settings.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseIII_Data_Collection/yhscraper_google/yhscraper/spiders/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseIII_Data_Collection/yhscraper_google/yhscraper/spiders/yhspider.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseIII_Data_Collection/yhscraper_yahoo/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseIII_Data_Collection/yhscraper_yahoo/scrapy.cfg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseIII_Data_Collection/yhscraper_yahoo/yahoo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseIII_Data_Collection/yhscraper_yahoo/yhscraper/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseIII_Data_Collection/yhscraper_yahoo/yhscraper/dataset/Amazon_news_title.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseIII_Data_Collection/yhscraper_yahoo/yhscraper/dataset/Apple_news_title.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseIII_Data_Collection/yhscraper_yahoo/yhscraper/dataset/IBM_news_title.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseIII_Data_Collection/yhscraper_yahoo/yhscraper/dataset/MS_news_title.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseIII_Data_Collection/yhscraper_yahoo/yhscraper/items.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseIII_Data_Collection/yhscraper_yahoo/yhscraper/middlewares.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseIII_Data_Collection/yhscraper_yahoo/yhscraper/pipelines.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseIII_Data_Collection/yhscraper_yahoo/yhscraper/settings.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseIII_Data_Collection/yhscraper_yahoo/yhscraper/spiders/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseIII_Data_Collection/yhscraper_yahoo/yhscraper/spiders/yhspider.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseII_CNN/cnn.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseII_CNN/cnn_train.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseII_CNN/data_function.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseII_CNN/eval.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseIV_Sentiment_CNN/cnn.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseIV_Sentiment_CNN/cnn_train.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseIV_Sentiment_CNN/data_function.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseIV_Sentiment_CNN/eval.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseI_Traditional_Model/version1/data_helper.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseI_Traditional_Model/version1/sentiwordnet.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseI_Traditional_Model/version1/sentiwordnet/sentiwordnet.tsv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseI_Traditional_Model/version1/train.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseI_Traditional_Model/version2/data_handler.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseI_Traditional_Model/version2/train.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseVII_LSTM_Change/create_data.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseVII_LSTM_Change/data/apple_minmax.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseVII_LSTM_Change/data/apple_standard.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseVII_LSTM_Change/graph/loss.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseVII_LSTM_Change/graph/test_prediction_100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseVII_LSTM_Change/graph/test_prediction_200.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseVII_LSTM_Change/graph/test_prediction_300.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseVII_LSTM_Change/graph/test_prediction_75.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseVII_LSTM_Change/graph/test_return_100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseVII_LSTM_Change/graph/test_return_200.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseVII_LSTM_Change/graph/test_return_300.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseVII_LSTM_Change/graph/test_return_75.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseVII_LSTM_Change/graph/train_prediction_100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseVII_LSTM_Change/graph/train_prediction_200.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseVII_LSTM_Change/graph/train_prediction_300.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseVII_LSTM_Change/graph/train_prediction_75.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseVII_LSTM_Change/graph/train_return_100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseVII_LSTM_Change/graph/train_return_200.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseVII_LSTM_Change/graph/train_return_300.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseVII_LSTM_Change/graph/train_return_75.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseVII_LSTM_Change/lstm.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseVII_LSTM_Change/lstm_model" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseVII_LSTM_Change/model.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseVII_LSTM_Change/test.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseVI_LSTM_Price/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseVI_LSTM_Price/config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseVI_LSTM_Price/plot.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseVI_LSTM_Price/plot_loss.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseVI_LSTM_Price/prices.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseVI_LSTM_Price/stock_lstm.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseV_Factive_CNN/auto_script.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseV_Factive_CNN/factiva_data/Apple_News_Data.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseV_Factive_CNN/factiva_data/eval_data.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseV_Factive_CNN/factiva_data/explore_data.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseV_Factive_CNN/factiva_data/extreme_days.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseV_Factive_CNN/factiva_data/filter.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseV_Factive_CNN/factiva_data/graph.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseV_Factive_CNN/factiva_data/prediction.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseV_Factive_CNN/factiva_data/sentiment.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseV_Factive_CNN/rtf_txt_converter.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PhaseV_Factive_CNN/txt_csv_converter.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/graph/training.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
@@ -23,45 +128,11 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="2265">
-                <caret line="189" column="26" lean-forward="true" selection-start-line="189" selection-start-column="26" selection-end-line="189" selection-end-column="26" />
+              <first_editor relative-caret-position="2664">
+                <caret line="189" column="26" lean-forward="false" selection-start-line="189" selection-start-column="26" selection-end-line="189" selection-end-column="26" />
                 <folding />
               </first_editor>
               <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lstm.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PhaseVII/lstm.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="58" selection-end-column="16" />
-              <folding>
-                <element signature="e#0#62#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="create_data.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PhaseVII/create_data.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="24" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="extreme_days.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PhaseV/factiva_data/extreme_days.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-488">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -84,6 +155,10 @@
       <find>df</find>
       <find>cnn</find>
       <find>shift</find>
+      <find>x</find>
+      <find>change</find>
+      <find>***</find>
+      <find>****</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -129,6 +204,10 @@
         <option value="$PROJECT_DIR$/PhaseII/eval.py" />
         <option value="$PROJECT_DIR$/PhaseV/factiva_data/filter.py" />
         <option value="$PROJECT_DIR$/PhaseVII/create_data.py" />
+        <option value="$PROJECT_DIR$/PhaseVII_LSTM_Change/test.py" />
+        <option value="$PROJECT_DIR$/PhaseVIII_Combined_Model/combined_model.py" />
+        <option value="$PROJECT_DIR$/PhaseVII_LSTM_Change/lstm.py" />
+        <option value="$PROJECT_DIR$/PhaseVII_LSTM_Change/create_data.py" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -155,7 +234,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -170,7 +249,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -179,85 +258,18 @@
     <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/cnn/data" />
-      <recent name="$PROJECT_DIR$/crawler" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/PhaseI/version2" />
       <recent name="$PROJECT_DIR$/PhaseI" />
       <recent name="$PROJECT_DIR$" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/PhaseVIII_Combined_Model/data" />
+      <recent name="$PROJECT_DIR$/cnn/data" />
+      <recent name="$PROJECT_DIR$/crawler" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.create_data">
-    <configuration default="false" name="cnn_train" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PhaseII/cnn" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="IK1701_FYP" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PhaseII/cnn/cnn_train.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="cnn_train (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PhaseII" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="IK1701_FYP" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PhaseII/cnn_train.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="eval" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PhaseII" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="IK1701_FYP" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PhaseII/eval.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="lstm" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PhaseVII" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="IK1701_FYP" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PhaseVII/lstm.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.lstm (1)">
     <configuration default="false" name="create_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -271,6 +283,74 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="IK1701_FYP" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PhaseVII/create_data.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="create_data (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PhaseVII_LSTM_Change" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="IK1701_FYP" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PhaseVII_LSTM_Change/create_data.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="lstm (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PhaseVII_LSTM_Change" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="IK1701_FYP" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PhaseVII_LSTM_Change/lstm.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PhaseVII_LSTM_Change" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="IK1701_FYP" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PhaseVII_LSTM_Change/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="combined_model" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PhaseVIII_Combined_Model" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="IK1701_FYP" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PhaseVIII_Combined_Model/combined_model.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -413,19 +493,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.cnn_train" />
-      <item index="1" class="java.lang.String" itemvalue="Python.cnn_train (1)" />
-      <item index="2" class="java.lang.String" itemvalue="Python.eval" />
-      <item index="3" class="java.lang.String" itemvalue="Python.lstm" />
-      <item index="4" class="java.lang.String" itemvalue="Python.create_data" />
+      <item index="0" class="java.lang.String" itemvalue="Python.create_data" />
+      <item index="1" class="java.lang.String" itemvalue="Python.create_data (1)" />
+      <item index="2" class="java.lang.String" itemvalue="Python.lstm (1)" />
+      <item index="3" class="java.lang.String" itemvalue="Python.test" />
+      <item index="4" class="java.lang.String" itemvalue="Python.combined_model" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.create_data" />
-        <item index="1" class="java.lang.String" itemvalue="Python.lstm" />
-        <item index="2" class="java.lang.String" itemvalue="Python.eval" />
-        <item index="3" class="java.lang.String" itemvalue="Python.cnn_train (1)" />
-        <item index="4" class="java.lang.String" itemvalue="Python.cnn_train" />
+        <item index="0" class="java.lang.String" itemvalue="Python.lstm (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Python.combined_model" />
+        <item index="2" class="java.lang.String" itemvalue="Python.create_data (1)" />
+        <item index="3" class="java.lang.String" itemvalue="Python.test" />
+        <item index="4" class="java.lang.String" itemvalue="Python.create_data" />
       </list>
     </recent_temporary>
   </component>
@@ -444,17 +524,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Debug Logs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19156626" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16867469" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24947146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24947146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -500,372 +580,129 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cnn/cnn_train.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="38" column="44" lean-forward="false" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cnn/apple_data/eval_data.py" />
-    <entry file="file://$PROJECT_DIR$/cnn/apple_data/prediction.csv" />
-    <entry file="file://$PROJECT_DIR$/cnn/apple_data/sentiment.csv" />
-    <entry file="file://$PROJECT_DIR$/cnn/apple_data/extreme_days.py" />
-    <entry file="file://$PROJECT_DIR$/cnn/apple_data/graph.py" />
-    <entry file="file://$PROJECT_DIR$/cnn/data/process_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cnn/factiva_data/Apple_News_Data.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="22430" column="10" lean-forward="false" selection-start-line="22430" selection-start-column="10" selection-end-line="22430" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cnn/factiva_data/extreme_days.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cnn/news_data/price_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lstm/graph.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cnn/data/draw_graph.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="34" column="17" lean-forward="true" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lstm/data/apple.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-18075">
-          <caret line="5" column="7" lean-forward="false" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cnn/factiva_data/sentiment.csv">
+    <entry file="file://$PROJECT_DIR$/cnn/data/draw_graph.py" />
+    <entry file="file://$PROJECT_DIR$/lstm/data/apple.csv" />
+    <entry file="file://$PROJECT_DIR$/cnn/factiva_data/sentiment.csv" />
+    <entry file="file://$PROJECT_DIR$/cnn/factiva_data/explore_data.py" />
+    <entry file="file://$PROJECT_DIR$/cnn/factiva_data/eval_data.py" />
+    <entry file="file://$PROJECT_DIR$/cnn/factiva_data/graph.py" />
+    <entry file="file://$PROJECT_DIR$/stocknews/test.csv" />
+    <entry file="file://$PROJECT_DIR$/stocknews/train.csv" />
+    <entry file="file://$PROJECT_DIR$/PhaseI/train.py" />
+    <entry file="file://$PROJECT_DIR$/PhaseI/README.txt" />
+    <entry file="file://$PROJECT_DIR$/PhaseI/data_helper.py" />
+    <entry file="file://$PROJECT_DIR$/PhaseI/data_handler.py" />
+    <entry file="file://$PROJECT_DIR$/PhaseI/version1/sentiwordnet.py" />
+    <entry file="file://$PROJECT_DIR$/PhaseII/cnn/news_data/amazon_data.csv" />
+    <entry file="file://$PROJECT_DIR$/lstm/lstm.py" />
+    <entry file="file://$PROJECT_DIR$/PhaseII_IV_V/cnn/cnn.py" />
+    <entry file="file://$PROJECT_DIR$/PhaseII_IV_V/cnn/eval.py" />
+    <entry file="file://$PROJECT_DIR$/PhaseI/version2/train.py" />
+    <entry file="file://$PROJECT_DIR$/PhaseII_IV_V/cnn/data/remove_date.py" />
+    <entry file="file://$PROJECT_DIR$/PhaseII_IV_V/cnn/data/process_data.py" />
+    <entry file="file://$PROJECT_DIR$/PhaseII_IV_V/cnn/data/amazon.csv" />
+    <entry file="file://$PROJECT_DIR$/PhaseII_IV_V/cnn/data/amazon_data.csv" />
+    <entry file="file://$PROJECT_DIR$/PhaseII_IV_V/cnn/news_data/price.csv" />
+    <entry file="file://$PROJECT_DIR$/PhaseII_IV_V/cnn/data/draw_graph.py" />
+    <entry file="file://$PROJECT_DIR$/lstm/create_data.py" />
+    <entry file="file://$PROJECT_DIR$/PhaseII/cnn/eval.py" />
+    <entry file="file://$PROJECT_DIR$/PhaseII/cnn/cnn_train.py" />
+    <entry file="file://$PROJECT_DIR$/PhaseII/cnn/cnn.py" />
+    <entry file="file://$PROJECT_DIR$/PhaseII/eval.py" />
+    <entry file="file://$PROJECT_DIR$/PhaseIV/data/Twitter.csv" />
+    <entry file="file://$PROJECT_DIR$/PhaseIV/cnn_train.py" />
+    <entry file="file://$PROJECT_DIR$/PhaseII/cnn_train.py" />
+    <entry file="file://$PROJECT_DIR$/PhaseV/factiva_data/explore_data.py" />
+    <entry file="file://$PROJECT_DIR$/PhaseV/factiva_data/filter.py" />
+    <entry file="file://$PROJECT_DIR$/PhaseVII/graph.py" />
+    <entry file="file://$PROJECT_DIR$/PhaseV/factiva_data/eval_data.py" />
+    <entry file="file://$PROJECT_DIR$/PhaseVII/create_data.py" />
+    <entry file="file://$PROJECT_DIR$/PhaseV/factiva_data/extreme_days.py" />
+    <entry file="file://$PROJECT_DIR$/PhaseVII/lstm.py" />
+    <entry file="file://$PROJECT_DIR$/PhaseVII_LSTM_Change/data/apple_standard.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cnn/factiva_data/explore_data.py">
+    <entry file="file://$PROJECT_DIR$/PhaseVII_LSTM_Change/data/apple_minmax.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="23" lean-forward="false" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        <state relative-caret-position="16830">
+          <caret line="1122" column="44" lean-forward="false" selection-start-line="1122" selection-start-column="44" selection-end-line="1122" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cnn/factiva_data/eval_data.py">
+    <entry file="file://$PROJECT_DIR$/PhaseVII_LSTM_Change/model.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PhaseVII_LSTM_Change/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="14" column="23" lean-forward="false" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-          <folding />
+        <state relative-caret-position="60">
+          <caret line="4" column="21" lean-forward="false" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cnn/factiva_data/graph.py">
+    <entry file="file://$PROJECT_DIR$/PhaseIV_Sentiment_CNN/eval.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-60">
-          <caret line="34" column="10" lean-forward="false" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stocknews/test.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="-898">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stocknews/train.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PhaseI/train.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="21" lean-forward="true" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PhaseI/README.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PhaseI/data_helper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PhaseI/data_handler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PhaseI/version1/sentiwordnet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PhaseII/cnn/news_data/amazon_data.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lstm/lstm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="21" lean-forward="false" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PhaseII_IV_V/cnn/cnn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PhaseII_IV_V/cnn/eval.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-632">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PhaseI/version2/train.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-92">
-          <caret line="27" column="30" lean-forward="false" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PhaseII_IV_V/cnn/data/remove_date.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PhaseII_IV_V/cnn/data/process_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-77">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PhaseII_IV_V/cnn/data/amazon.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PhaseII_IV_V/cnn/data/amazon_data.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PhaseII_IV_V/cnn/news_data/price.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PhaseII_IV_V/cnn/data/draw_graph.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-212">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lstm/create_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="30" column="11" lean-forward="false" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PhaseII/cnn/eval.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-917">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PhaseII/cnn/cnn_train.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="66" column="25" lean-forward="true" selection-start-line="66" selection-start-column="25" selection-end-line="66" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PhaseII/cnn/cnn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PhaseII/eval.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="20" selection-end-column="89" />
-          <folding>
-            <element signature="e#0#23#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PhaseIV/data/Twitter.csv">
+    <entry file="file://$PROJECT_DIR$/PhaseIV_Sentiment_CNN/data/Twitter.csv">
       <provider selected="true" editor-type-id="LargeFileEditor">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PhaseIV/cnn_train.py">
+    <entry file="file://$PROJECT_DIR$/PhaseVII_LSTM_Change/create_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PhaseVII_LSTM_Change/lstm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="915">
+          <caret line="75" column="17" lean-forward="true" selection-start-line="75" selection-start-column="17" selection-end-line="75" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PhaseVIII_Combined_Model/data/sentiment.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="62" lean-forward="false" selection-start-line="30" selection-start-column="62" selection-end-line="30" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PhaseVIII_Combined_Model/combined_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="15" lean-forward="false" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PhaseV_Factive_CNN/factiva_data/sentiment.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PhaseII/cnn_train.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="41" selection-end-column="89" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PhaseV/factiva_data/explore_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PhaseV/factiva_data/filter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="50" column="19" lean-forward="false" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#19#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PhaseVII/graph.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PhaseV/factiva_data/eval_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="38" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#19#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PhaseVII/create_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="24" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PhaseV/factiva_data/extreme_days.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-488">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PhaseVII/lstm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="58" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#62#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="2265">
-            <caret line="189" column="26" lean-forward="true" selection-start-line="189" selection-start-column="26" selection-end-line="189" selection-end-column="26" />
+          <first_editor relative-caret-position="2664">
+            <caret line="189" column="26" lean-forward="false" selection-start-line="189" selection-start-column="26" selection-end-line="189" selection-end-column="26" />
             <folding />
           </first_editor>
           <second_editor />

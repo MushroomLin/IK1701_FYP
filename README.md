@@ -202,3 +202,194 @@ You can download by yourself
     seq_len = 10 #length of input
     batch = 128 # batch size
     epochs = 100 # num of training epochs
+
+
+
+# File Tree
+
+    ├── Phase1_Traditional_Model
+    │   ├── version1
+    │   │   ├── data_helper.py
+    │   │   ├── sentiwordnet
+    │   │   │   └── sentiwordnet.tsv
+    │   │   ├── sentiwordnet.py
+    │   │   └── train.py
+    │   └── version2
+    │       ├── __pycache__
+    │       │   └── data_handler.cpython-36.pyc
+    │       ├── data_handler.py
+    │       └── train.py
+    ├── Phase2_CNN
+    │   ├── cnn.py
+    │   ├── cnn_train.py
+    │   ├── data_function.py
+    │   ├── eval.py
+    │   ├── word2vec_model
+    │   ├── word2vec_model.syn1neg.npy
+    │   └── word2vec_model.wv.syn0.npy
+    ├── Phase3_Data_Collection
+    │   ├── price_data.py
+    │   ├── twitter_crawler
+    │   │   ├── Exporter.py
+    │   │   ├── LICENSE
+    │   │   ├── Main.py
+    │   │   ├── README.md
+    │   │   ├── exporter_help_text.txt
+    │   │   ├── got
+    │   │   │   ├── __init__.py
+    │   │   │   ├── manager
+    │   │   │   │   ├── TweetCriteria.py
+    │   │   │   │   ├── TweetManager.py
+    │   │   │   │   └── __init__.py
+    │   │   │   └── models
+    │   │   │       ├── Tweet.py
+    │   │   │       └── __init__.py
+    │   │   ├── got3
+    │   │   │   ├── __init__.py
+    │   │   │   ├── __pycache__
+    │   │   │   │   └── __init__.cpython-36.pyc
+    │   │   │   ├── manager
+    │   │   │   │   ├── TweetCriteria.py
+    │   │   │   │   ├── TweetManager.py
+    │   │   │   │   ├── __init__.py
+    │   │   │   │   ├── __init__.py.bak
+    │   │   │   │   └── __pycache__
+    │   │   │   │       ├── TweetCriteria.cpython-36.pyc
+    │   │   │   │       ├── TweetManager.cpython-36.pyc
+    │   │   │   │       └── __init__.cpython-36.pyc
+    │   │   │   └── models
+    │   │   │       ├── Tweet.py
+    │   │   │       ├── __init__.py
+    │   │   │       └── __pycache__
+    │   │   │           ├── Tweet.cpython-36.pyc
+    │   │   │           └── __init__.cpython-36.pyc
+    │   │   ├── requirements.txt
+    │   │   └── twitter_crawler.py
+    │   ├── yhscraper_google
+    │   │   ├── README.txt
+    │   │   ├── scrapy.cfg
+    │   │   ├── yahoo
+    │   │   └── yhscraper
+    │   │       ├── __init__.py
+    │   │       ├── __init__.pyc
+    │   │       ├── dataset
+    │   │       │   ├── Amazon_news_title.csv
+    │   │       │   ├── Apple_news_title.csv
+    │   │       │   ├── IBM_news_title.csv
+    │   │       │   └── MS_news_title.csv
+    │   │       ├── items.py
+    │   │       ├── items.pyc
+    │   │       ├── middlewares.py
+    │   │       ├── pipelines.py
+    │   │       ├── settings.py
+    │   │       ├── settings.pyc
+    │   │       └── spiders
+    │   │           ├── __init__.py
+    │   │           ├── __init__.pyc
+    │   │           ├── yhspider.py
+    │   │           └── yhspider.pyc
+    │   └── yhscraper_yahoo
+    │       ├── README.txt
+    │       ├── scrapy.cfg
+    │       ├── yahoo
+    │       └── yhscraper
+    │           ├── __init__.py
+    │           ├── __init__.pyc
+    │           ├── dataset
+    │           │   ├── Amazon_news_title.csv
+    │           │   ├── Apple_news_title.csv
+    │           │   ├── IBM_news_title.csv
+    │           │   └── MS_news_title.csv
+    │           ├── items.py
+    │           ├── items.pyc
+    │           ├── middlewares.py
+    │           ├── pipelines.py
+    │           ├── settings.py
+    │           ├── settings.pyc
+    │           └── spiders
+    │               ├── __init__.py
+    │               ├── __init__.pyc
+    │               ├── yhspider.py
+    │               └── yhspider.pyc
+    ├── Phase4_Sentiment_CNN
+    │   ├── cnn.py
+    │   ├── cnn_train.py
+    │   ├── data
+    │   │   ├── Twitter.csv
+    │   │   ├── negative
+    │   │   ├── positive
+    │   │   └── process_data.py
+    │   ├── data_function.py
+    │   └── eval.py
+    ├── Phase5_Factive_CNN
+    │   ├── auto_script.py
+    │   ├── factiva_data
+    │   │   ├── Apple_News_Data.csv
+    │   │   ├── eval_data.py
+    │   │   ├── explore_data.py
+    │   │   ├── extreme_days.py
+    │   │   ├── filter.py
+    │   │   ├── graph.py
+    │   │   ├── prediction.csv
+    │   │   └── sentiment.csv
+    │   ├── rtf_txt_converter.py
+    │   └── txt_csv_converter.py
+    ├── Phase6_LSTM_Price
+    │   ├── README.txt
+    │   ├── config.py
+    │   ├── plot.py
+    │   ├── plot_loss.py
+    │   ├── prices.csv
+    │   └── stock_lstm.py
+    ├── Phase7_LSTM_Change
+    │   ├── create_data.py
+    │   ├── data
+    │   │   ├── apple_minmax.csv
+    │   │   └── apple_standard.csv
+    │   ├── graph
+    │   │   ├── loss.png
+    │   │   ├── test_prediction_100.png
+    │   │   ├── test_prediction_200.png
+    │   │   ├── test_return_100.png
+    │   │   ├── test_return_200.png
+    │   │   ├── train_prediction_100.png
+    │   │   ├── train_prediction_200.png
+    │   │   ├── train_return_100.png
+    │   │   └── train_return_200.png
+    │   ├── lstm.py
+    │   ├── lstm_model
+    │   ├── model.png
+    │   └── test.py
+    ├── README.md
+    ├── graph
+    │   ├── 2_year_apple
+    │   │   ├── 3_days_average.png
+    │   │   ├── derivative.png
+    │   │   ├── figure_0.png
+    │   │   ├── figure_1.png
+    │   │   ├── figure_2.png
+    │   │   ├── figure_3.png
+    │   │   └── stock_dev_sentiment.png
+    │   ├── amazon
+    │   │   ├── figure_0.png
+    │   │   ├── figure_1.png
+    │   │   └── figure_2.png
+    │   ├── apple
+    │   │   ├── figure_0.png
+    │   │   ├── figure_1.png
+    │   │   └── figure_2.png
+    │   ├── cnn
+    │   │   └── training.png
+    │   ├── facebook
+    │   │   ├── figure_0.png
+    │   │   ├── figure_1.png
+    │   │   └── figure_2.png
+    │   ├── google
+    │   │   ├── figure_0.png
+    │   │   ├── figure_1.png
+    │   │   └── figure_2.png
+    │   └── lstm
+    └── stocknews
+        ├── Combined_News_DJIA.csv
+        ├── DJIA_table.csv
+        └── RedditNews.csv

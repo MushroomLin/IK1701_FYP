@@ -14,12 +14,14 @@ def processData(data1,data2,lb):
         Y.append(data2[i+lb])
     return np.array(X), np.array(Y)
 
-def stock_algorithm(predictions, true):
+def stock_algorithm(predictions, true, true2):
+    print('*********************************')
     list_a=[]
     list_b=[]
     true=list(true)
     money=10000.0
-    stock_price=true[0]
+    length=len(true)-len(predictions)
+    stock_price=true[length-1]
     number=0
     for i in range(len(predictions)):
         if predictions[i]>=0:
@@ -28,10 +30,10 @@ def stock_algorithm(predictions, true):
         elif predictions[i]<0:
             money+=number*stock_price
             number=0
-        print(stock_price)
+        print(stock_price,predictions[i],true2[i])
         list_a.append(money + stock_price * number)
-        list_b.append(stock_price*(10000/true[0]))
-        stock_price=true[i+1]
+        list_b.append(stock_price*(10000/true[length-1]))
+        stock_price=true[i+length]
     money+=stock_price*number
     return money,stock_price,list_a,list_b
 
@@ -49,12 +51,12 @@ def accuracy(predictions, test_y):
 class conf:
     instrument = 'AAPL'
     start_date = '2008-01-01'
-    split_date = '2016-01-01'
+    split_date = '2015-01-01'
     end_date = '2018-01-01'
     fields = [ 'change']  # features
     seq_len = 10 #length of input
     batch = 128 # batch size
-    epochs = 200 # num of epochs to train
+    epochs = 100 # num of epochs to train
     scale ='minmax' # way of scale training data, either minmax or standard
 
 
@@ -73,7 +75,7 @@ train_x,train_y = processData(np.array(train[conf.fields]),np.array(train['next_
 
 # Build the model
 model = Sequential()
-model.add(LSTM(128, dropout=0,input_shape=(conf.seq_len,len(conf.fields))))
+model.add(LSTM(128, dropout=0.2,input_shape=(conf.seq_len,len(conf.fields))))
 model.add(Dense(1))
 model.compile(optimizer='adam',loss='mse')
 #Fit model with history to check for overfitting
@@ -90,6 +92,9 @@ plt.show()
 
 # Save the model
 model.save('./lstm_model')
+
+
+
 # Load the model
 model=load_model('./lstm_model')
 
@@ -97,7 +102,7 @@ model=load_model('./lstm_model')
 predictions = model.predict(test_x)
 predictions_X = model.predict(train_x)
 # Check for training
-money,real,list_a,list_b=stock_algorithm(predictions_X,train['adj_close'])
+money,real,list_a,list_b=stock_algorithm(predictions_X,train['adj_close'],train_y)
 print(money,real)
 date_train=list(train_date[:len(train_y)])
 date_train=[dt.datetime.strptime(dat,'%Y-%m-%d').date() for dat in date_train]
@@ -120,26 +125,30 @@ plt.savefig('./graph/train_return_'+str(conf.epochs)+'.png')
 plt.show()
 
 # Predict on testing set and draw return graph
-money,real,list_a,list_b=stock_algorithm(predictions,test['adj_close'])
+money,real,list_a,list_b=stock_algorithm(predictions,test['adj_close'],test_y)
 print(money,real)
 
 date_test=list(test_date[:len(test_y)])
 date_test=[dt.datetime.strptime(dat,'%Y-%m-%d').date() for dat in date_test]
+fig1, ax1 = plt.subplots()
 plt.scatter(date_test,predictions, s=5, label="prediction")
 plt.scatter(date_test,test_y,s=5,label='ground truth')
 plt.xlabel('Date')
 plt.ylabel('Price Change')
 plt.title('Test price change and true value')
 plt.legend()
+fig1.autofmt_xdate()
 plt.savefig('./graph/test_prediction_'+str(conf.epochs)+'.png')
 plt.show()
 
+fig2, ax2 = plt.subplots()
 plt.plot(date_test,list_a,label='our algorithm')
 plt.plot(date_test,list_b,label='overall')
 plt.xlabel('Date')
 plt.ylabel('Money')
 plt.title('Test Return')
 plt.legend()
+fig2.autofmt_xdate()
 plt.savefig('./graph/test_return_'+str(conf.epochs)+'.png')
 plt.show()
 # Accuracy

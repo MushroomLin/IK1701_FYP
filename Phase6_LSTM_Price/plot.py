@@ -34,8 +34,8 @@ date_dict = dict(zip(date, date_num))
 # Plot 
 fig = plt.figure(figsize=(12,6))
 ax = fig.add_subplot(111)
-plt.plot(date_num, real, 'bo')
-plt.plot(date_num, predict, 'ro')
+plt.plot(date_num, real, 'bo', label='Real')
+plt.plot(date_num, predict, 'ro', label='Predict')
 plt.xlabel('Date')
 plt.ylabel('Price')
 xticks_num = []
@@ -60,4 +60,5 @@ if config.TIME_SPAN > 1:
     plt.title('LSTM model with time span of ' + str(config.TIME_SPAN) + ' days')
 else:
     plt.title('LSTM model with time span of 1 day')
+plt.legend()
 plt.show()

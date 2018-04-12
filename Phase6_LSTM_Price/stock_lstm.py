@@ -12,6 +12,7 @@ import matplotlib.pyplot as plt
 from numpy import newaxis
 import csv
 import config
+import math
 
 prices_dataset =  pd.read_csv(config.DATASET, header=0)
 company = prices_dataset[prices_dataset['symbol']==config.COMPANY]
@@ -48,14 +49,15 @@ def create_dataset(dataset, look_back):
 trainX, trainY = create_dataset(train, config.TIME_SPAN)
 testX, testY = create_dataset(test, config.TIME_SPAN)
 
-trainX = np.reshape(trainX, (trainX.shape[0], 1, trainX.shape[1]))
-testX = np.reshape(testX, (testX.shape[0], 1, testX.shape[1]))
+trainX = np.reshape(trainX, (trainX.shape[0],  trainX.shape[1],1))
+testX = np.reshape(testX, (testX.shape[0], testX.shape[1],1))
 
 #Step 2 Build Model
 model = Sequential()
 
 model.add(LSTM(
-    input_dim=config.TIME_SPAN,
+    input_dim=1,
+    input_length=config.TIME_SPAN,
     output_dim=50,
     return_sequences=True))
 model.add(Dropout(0.2))
@@ -95,30 +97,31 @@ def predict_sequences_multiple(model, firstValue,length):
     return prediction_seqs
 
 def loss(true, predict):
-    return np.square(abs(true-predict) / predict)
+    return np.square(abs(true-predict) / true)
 
 predict_length=1
 testY_origin = scaler.inverse_transform(np.array(testY).reshape(-1,1))
 trainY_origin = scaler.inverse_transform(np.array(trainY).reshape(-1,1))
 train_loss = 0
 test_loss = 0
-with open(config.COMPANY + '_plot_' + str(config.TIME_SPAN) +'.csv', 'wb') as csvfile: 
-    writer = csv.writer(csvfile)
-    writer.writerow(['Date', 'Real', 'Predict'])
+# with open(config.COMPANY + '_plot_' + str(config.TIME_SPAN) +'.csv', 'wb') as csvfile: 
+#     writer = csv.writer(csvfile)
+#     writer.writerow(['Date', 'Real', 'Predict'])
 for i in range(len(trainX)):
     predictions = predict_sequences_multiple(model, trainX[i], predict_length)
     true_value = trainY_origin[i,0]
     predict_value = scaler.inverse_transform(np.array(predictions).reshape(-1, 1))[0,0]
-    writer.writerow([train_date[i+config.TIME_SPAN], true_value, predict_value])
+    # writer.writerow([train_date[i+config.TIME_SPAN], true_value, predict_value])
     train_loss += loss(true_value, predict_value)
 train_loss = train_loss / len(trainX)
+train_loss = train_loss / math.sqrt(config.TIME_SPAN)
 for i in range(len(testX)):
     predictions = predict_sequences_multiple(model, testX[i], predict_length)
     true_value = testY_origin[i,0]
     predict_value = scaler.inverse_transform(np.array(predictions).reshape(-1, 1))[0,0]
-    writer.writerow([test_date[i+config.TIME_SPAN], true_value, predict_value])
+    # writer.writerow([test_date[i+config.TIME_SPAN], true_value, predict_value])
     test_loss += loss(true_value, predict_value)
-test_loss = test_loss / len(testX)
+test_loss = test_loss / math.sqrt(config.TIME_SPAN)
 
 with open('loss.txt', 'a') as file:
     file.write(str(config.TIME_SPAN) + '    '+str(train_loss) + '    ' + str(test_loss) + '\r\n')

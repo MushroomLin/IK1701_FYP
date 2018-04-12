@@ -21,6 +21,18 @@
 	SentiWordNet: http://sentiwordnet.isti.cnr.it  
 
 ### File Description
+    ├── Phase1_Traditional_Model
+    │   ├── version1
+    │   │   ├── data_helper.py
+    │   │   ├── sentiwordnet
+    │   │   │   └── sentiwordnet.tsv
+    │   │   ├── sentiwordnet.py
+    │   │   └── train.py
+    │   └── version2
+    │       ├── __pycache__
+    │       │   └── data_handler.cpython-36.pyc
+    │       ├── data_handler.py
+    │       └── train.py
 #### Version 1:
 * sentiwordnet/sentiwordnet.tsv: TSV file of sentiwordnet
 * data_helper.py: File for data cleaning and preprocess
@@ -39,6 +51,14 @@ A voting model
 	Daily News for Stock Market Prediction
 	https://www.kaggle.com/aaron7sun/stocknews
 ### File Description
+    ├── Phase2_CNN
+    │   ├── cnn.py
+    │   ├── cnn_train.py
+    │   ├── data_function.py
+    │   ├── eval.py
+    │   ├── word2vec_model
+    │   ├── word2vec_model.syn1neg.npy
+    │   └── word2vec_model.wv.syn0.npy
 * cnn.py: Class for build the CNN model
 * cnn_train.py: Main file for train the model
 * data_function.py: File for data cleaning and preprocess
@@ -87,6 +107,70 @@ Word2Vec file for word embedding, too large to uploaded. You can run code withou
 * getOldTweets: https://github.com/Jefferson-Henrique/GetOldTweets-python
 * quandlAPI: https://www.quandl.com
 ### File description
+    ├── Phase3_Data_Collection
+    │   ├── price_data.py
+    │   ├── twitter_crawler
+    │   │   ├── Exporter.py
+    │   │   ├── LICENSE
+    │   │   ├── Main.py
+    │   │   ├── README.md
+    │   │   ├── exporter_help_text.txt
+    │   │   ├── got
+    │   │   │   ├── __init__.py
+    │   │   │   ├── manager
+    │   │   │   │   ├── TweetCriteria.py
+    │   │   │   │   ├── TweetManager.py
+    │   │   │   │   └── __init__.py
+    │   │   │   └── models
+    │   │   │       ├── Tweet.py
+    │   │   │       └── __init__.py
+    │   │   ├── got3
+    │   │   │   ├── __init__.py
+    │   │   │   ├── manager
+    │   │   │   │   ├── TweetCriteria.py
+    │   │   │   │   ├── TweetManager.py
+    │   │   │   │   └── __init__.py
+    │   │   │   └── models
+    │   │   │       ├── Tweet.py
+    │   │   │       └── __init__.py
+    │   │   ├── requirements.txt
+    │   │   └── twitter_crawler.py
+    │   ├── yhscraper_google
+    │   │   ├── README.txt
+    │   │   ├── scrapy.cfg
+    │   │   ├── yahoo
+    │   │   └── yhscraper
+    │   │       ├── __init__.py
+    │   │       ├── dataset
+    │   │       │   ├── Amazon_news_title.csv
+    │   │       │   ├── Apple_news_title.csv
+    │   │       │   ├── IBM_news_title.csv
+    │   │       │   └── MS_news_title.csv
+    │   │       ├── items.py
+    │   │       ├── middlewares.py
+    │   │       ├── pipelines.py
+    │   │       ├── settings.py
+    │   │       └── spiders
+    │   │           ├── __init__.py
+    │   │           └── yhspider.py
+    │   └── yhscraper_yahoo
+    │       ├── README.txt
+    │       ├── scrapy.cfg
+    │       ├── yahoo
+    │       └── yhscraper
+    │           ├── __init__.py
+    │           ├── dataset
+    │           │   ├── Amazon_news_title.csv
+    │           │   ├── Apple_news_title.csv
+    │           │   ├── IBM_news_title.csv
+    │           │   └── MS_news_title.csv
+    │           ├── items.py
+    │           ├── middlewares.py
+    │           ├── pipelines.py
+    │           ├── settings.py
+    │           └── spiders
+    │               ├── __init__.py
+    │               └── yhspider.py
 * twitter_crawler: Crawler for twitter data
 * yhscraper_google: Crawler for news data from google finance
 * yhscraper_yahoo: Crawler for news data from yahoo finance
@@ -98,6 +182,16 @@ Word2Vec file for word embedding, too large to uploaded. You can run code withou
 ### Data
 * Sentiment 140: http://www.sentiment140.com
 ### File description
+    ├── Phase4_Sentiment_CNN
+    │   ├── cnn.py
+    │   ├── cnn_train.py
+    │   ├── data
+    │   │   ├── Twitter.csv
+    │   │   ├── negative
+    │   │   ├── positive
+    │   │   └── process_data.py
+    │   ├── data_function.py
+    │   └── eval.py
 * cnn.py: Class for build the CNN model
 * cnn_train.py: Main file for train the model
 * data_function.py: File for data cleaning and preprocess
@@ -149,6 +243,19 @@ You can download by yourself
     --log_device_placement: Log placement of ops on devices
 ## Phase V: Further data collection and development of sentiment CNN
 ### File description
+    ├── Phase5_Factive_CNN
+    │   ├── auto_script.py
+    │   ├── factiva_data
+    │   │   ├── Apple_News_Data.csv
+    │   │   ├── eval_data.py
+    │   │   ├── explore_data.py
+    │   │   ├── extreme_days.py
+    │   │   ├── filter.py
+    │   │   ├── graph.py
+    │   │   ├── prediction.csv
+    │   │   └── sentiment.csv
+    │   ├── rtf_txt_converter.py
+    │   └── txt_csv_converter.py
 * auto_script.py: Example script for download rtf data
 * rft_txt_converter.py: Example script for change rtf data to txt file
 * txt_csv_converter.py: Script for change txt file into csv file
@@ -176,6 +283,13 @@ You can download by yourself
     python filter.py [argv]
 ## Phase VI: Development of an LSTM model for price prediction
 ### File description
+    ├── Phase6_LSTM_Price
+    │   ├── README.txt
+    │   ├── config.py
+    │   ├── plot.py
+    │   ├── plot_loss.py
+    │   ├── prices.csv
+    │   └── stock_lstm.py
 * stock_lstm.py: script to run the LSTM model
 * plot.py: script to plot the figure of the predicted price (red) and the real values (blue) versus date
 * plot_loss.py: script to plot the figure of the loss variation of the training (blue) and testing (red) process, as well as the baseline loss (green)
@@ -186,6 +300,15 @@ You can download by yourself
     python plot_loss.py
 ## Phase VII: Development of an LSTM model for price change prediction and an investment simulation algorithm
 ### File description
+    ├── Phase7_LSTM_Change
+    │   ├── create_data.py
+    │   ├── data
+    │   │   ├── apple_minmax.csv
+    │   │   └── apple_standard.csv
+    │   ├── lstm.py
+    │   ├── lstm_model
+    │   ├── model.png
+    │   └── test.py
 * create_data.py: create data for LSTM training
 * lstm.py: LSTM model and algorithm visualize
 ### Usage
@@ -204,162 +327,8 @@ You can download by yourself
     epochs = 100 # num of training epochs
 
 
+# Other files
 
-# File Tree
-
-    ├── Phase1_Traditional_Model
-    │   ├── version1
-    │   │   ├── data_helper.py
-    │   │   ├── sentiwordnet
-    │   │   │   └── sentiwordnet.tsv
-    │   │   ├── sentiwordnet.py
-    │   │   └── train.py
-    │   └── version2
-    │       ├── __pycache__
-    │       │   └── data_handler.cpython-36.pyc
-    │       ├── data_handler.py
-    │       └── train.py
-    ├── Phase2_CNN
-    │   ├── cnn.py
-    │   ├── cnn_train.py
-    │   ├── data_function.py
-    │   ├── eval.py
-    │   ├── word2vec_model
-    │   ├── word2vec_model.syn1neg.npy
-    │   └── word2vec_model.wv.syn0.npy
-    ├── Phase3_Data_Collection
-    │   ├── price_data.py
-    │   ├── twitter_crawler
-    │   │   ├── Exporter.py
-    │   │   ├── LICENSE
-    │   │   ├── Main.py
-    │   │   ├── README.md
-    │   │   ├── exporter_help_text.txt
-    │   │   ├── got
-    │   │   │   ├── __init__.py
-    │   │   │   ├── manager
-    │   │   │   │   ├── TweetCriteria.py
-    │   │   │   │   ├── TweetManager.py
-    │   │   │   │   └── __init__.py
-    │   │   │   └── models
-    │   │   │       ├── Tweet.py
-    │   │   │       └── __init__.py
-    │   │   ├── got3
-    │   │   │   ├── __init__.py
-    │   │   │   ├── __pycache__
-    │   │   │   │   └── __init__.cpython-36.pyc
-    │   │   │   ├── manager
-    │   │   │   │   ├── TweetCriteria.py
-    │   │   │   │   ├── TweetManager.py
-    │   │   │   │   ├── __init__.py
-    │   │   │   │   ├── __init__.py.bak
-    │   │   │   │   └── __pycache__
-    │   │   │   │       ├── TweetCriteria.cpython-36.pyc
-    │   │   │   │       ├── TweetManager.cpython-36.pyc
-    │   │   │   │       └── __init__.cpython-36.pyc
-    │   │   │   └── models
-    │   │   │       ├── Tweet.py
-    │   │   │       ├── __init__.py
-    │   │   │       └── __pycache__
-    │   │   │           ├── Tweet.cpython-36.pyc
-    │   │   │           └── __init__.cpython-36.pyc
-    │   │   ├── requirements.txt
-    │   │   └── twitter_crawler.py
-    │   ├── yhscraper_google
-    │   │   ├── README.txt
-    │   │   ├── scrapy.cfg
-    │   │   ├── yahoo
-    │   │   └── yhscraper
-    │   │       ├── __init__.py
-    │   │       ├── __init__.pyc
-    │   │       ├── dataset
-    │   │       │   ├── Amazon_news_title.csv
-    │   │       │   ├── Apple_news_title.csv
-    │   │       │   ├── IBM_news_title.csv
-    │   │       │   └── MS_news_title.csv
-    │   │       ├── items.py
-    │   │       ├── items.pyc
-    │   │       ├── middlewares.py
-    │   │       ├── pipelines.py
-    │   │       ├── settings.py
-    │   │       ├── settings.pyc
-    │   │       └── spiders
-    │   │           ├── __init__.py
-    │   │           ├── __init__.pyc
-    │   │           ├── yhspider.py
-    │   │           └── yhspider.pyc
-    │   └── yhscraper_yahoo
-    │       ├── README.txt
-    │       ├── scrapy.cfg
-    │       ├── yahoo
-    │       └── yhscraper
-    │           ├── __init__.py
-    │           ├── __init__.pyc
-    │           ├── dataset
-    │           │   ├── Amazon_news_title.csv
-    │           │   ├── Apple_news_title.csv
-    │           │   ├── IBM_news_title.csv
-    │           │   └── MS_news_title.csv
-    │           ├── items.py
-    │           ├── items.pyc
-    │           ├── middlewares.py
-    │           ├── pipelines.py
-    │           ├── settings.py
-    │           ├── settings.pyc
-    │           └── spiders
-    │               ├── __init__.py
-    │               ├── __init__.pyc
-    │               ├── yhspider.py
-    │               └── yhspider.pyc
-    ├── Phase4_Sentiment_CNN
-    │   ├── cnn.py
-    │   ├── cnn_train.py
-    │   ├── data
-    │   │   ├── Twitter.csv
-    │   │   ├── negative
-    │   │   ├── positive
-    │   │   └── process_data.py
-    │   ├── data_function.py
-    │   └── eval.py
-    ├── Phase5_Factive_CNN
-    │   ├── auto_script.py
-    │   ├── factiva_data
-    │   │   ├── Apple_News_Data.csv
-    │   │   ├── eval_data.py
-    │   │   ├── explore_data.py
-    │   │   ├── extreme_days.py
-    │   │   ├── filter.py
-    │   │   ├── graph.py
-    │   │   ├── prediction.csv
-    │   │   └── sentiment.csv
-    │   ├── rtf_txt_converter.py
-    │   └── txt_csv_converter.py
-    ├── Phase6_LSTM_Price
-    │   ├── README.txt
-    │   ├── config.py
-    │   ├── plot.py
-    │   ├── plot_loss.py
-    │   ├── prices.csv
-    │   └── stock_lstm.py
-    ├── Phase7_LSTM_Change
-    │   ├── create_data.py
-    │   ├── data
-    │   │   ├── apple_minmax.csv
-    │   │   └── apple_standard.csv
-    │   ├── graph
-    │   │   ├── loss.png
-    │   │   ├── test_prediction_100.png
-    │   │   ├── test_prediction_200.png
-    │   │   ├── test_return_100.png
-    │   │   ├── test_return_200.png
-    │   │   ├── train_prediction_100.png
-    │   │   ├── train_prediction_200.png
-    │   │   ├── train_return_100.png
-    │   │   └── train_return_200.png
-    │   ├── lstm.py
-    │   ├── lstm_model
-    │   ├── model.png
-    │   └── test.py
     ├── README.md
     ├── graph
     │   ├── 2_year_apple
@@ -388,7 +357,16 @@ You can download by yourself
     │   │   ├── figure_0.png
     │   │   ├── figure_1.png
     │   │   └── figure_2.png
-    │   └── lstm
+    │   ├── lstm
+    │   │   ├── loss.png
+    │   │   ├── test_prediction_100.png
+    │   │   ├── test_prediction_200.png
+    │   │   ├── test_return_100.png
+    │   │   ├── test_return_200.png
+    │   │   ├── train_prediction_100.png
+    │   │   ├── train_prediction_200.png
+    │   │   ├── train_return_100.png
+    │   │   └── train_return_200.png
     └── stocknews
         ├── Combined_News_DJIA.csv
         ├── DJIA_table.csv

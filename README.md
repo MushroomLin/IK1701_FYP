@@ -324,6 +324,34 @@ You can download by yourself
     batch = 128 # batch size
     epochs = 100 # num of training epochs
 
+## Phase VIII: Development of an LSTM model for price change prediction and an investment simulation algorithm
+### File description
+    ├── Phase8_Combined_Model
+    │   ├── combined_model.py
+    │   ├── data
+    │   │   ├── lstm_prediction.csv
+    │   │   └── sentiment.csv
+    │   └── graph
+    │       ├── combined_test_prediction.png
+    │       ├── combined_test_return.png
+    │       ├── lstm_test_prediction.png
+    │       ├── lstm_test_return.png
+    │       ├── random_test_prediction.png
+    │       ├── random_test_return.png
+    │       ├── sentiment_test_prediction.png
+    │       ├── sentiment_test_return.png
+    │       ├── test_prediction.png
+    │       └── test_return.png
+* combined_model.py: Combined model and algorithm visualize
+* /data/lstm_prediction.csv: CSV data of LSTM prediction
+* /data/sentiment.csv: CSV data of Sentiment CNN model
+### Usage
+    # Run the model
+    python combined_model.py
+    * Configuration of Model
+    adjust_range = 0.05
+    adjust_value = 0.5
+    news_number = 50
 
 # Other files
 
